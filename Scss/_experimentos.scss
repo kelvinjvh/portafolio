@@ -1,0 +1,87 @@
+@use './mixins_variables' as mixins_variables;
+
+.title_experimentos {
+    @include mixins_variables.titles;
+}
+
+.experimentos {
+    position: relative;
+}
+
+.parent_box {
+    @include mixins_variables.flex_box(flex, space-around, center, wrap);
+}
+
+.box__experimentos {
+    width: 220px;
+    height: 250px;
+    @include mixins_variables.tamaños(250px, 220px);
+    background-color: mixins_variables.$light-bg;
+    border-radius: .1em;
+    overflow: hidden;
+    color: mixins_variables.$color_white;
+    border-radius: 20px;
+    @include mixins_variables.flex_box(center, center, center, wrap);
+    position: relative;
+    margin-bottom: 1.5em;
+}
+
+.box__experimentos img {
+    object-fit: cover;
+    @include mixins_variables.tamaños(100%, 220px);
+    width: 220px;
+    height: 100%;
+    position: absolute;
+}
+
+.box__experimentos p {
+    padding: .7em;
+}
+
+.title_card {
+    font-size: 1.1em;
+    margin: 0 0;
+}
+
+.btn_enlaces {
+    background-color: mixins_variables.$crimson;
+    padding: .5em 1em;
+    border-radius: 1.5em;
+}
+
+.color {
+    color: rgb(243, 243, 243);
+}
+
+.link_experimentos {
+    @include mixins_variables.tamaños(100px, 100%);
+    position: absolute;
+    top: 100%;
+    @include mixins_variables.flex_box(flex, center, flex-end, wrap);
+    transition: .5s;
+    cursor: pointer;
+}
+.button_links {
+    background: crimson;
+    padding: .5em 1em;
+    border-radius: 10px;
+    color: mixins_variables.$color_white;
+    width: 80%;
+    @include mixins_variables.flex_box(flex, center, center, null);
+    font-size: .8em;
+    color: #ffff;
+}
+
+.button_links svg {
+    @include mixins_variables.tamaños(1rem, 1rem);
+    margin-right: .5em;
+}
+
+.box__experimentos:hover .link_experimentos {
+    top: 50%;
+}
+
+.elementores {
+    position: absolute;
+    color: mixins_variables.$color_white;
+}

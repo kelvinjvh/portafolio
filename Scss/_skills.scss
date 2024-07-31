@@ -1,0 +1,44 @@
+/********seccion de skills******/
+@use 'mixins_variables' as mv;
+.section_skills {
+  @include mv.flex_box(flex, space-between, center, wrap);
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-bottom: mv.$botton2;
+  padding-top: 5em;
+}
+.conte_skills {
+  @include mv.flex_box(flex, space-between, center, wrap);
+  @include mv.tamaños(null, 90%);
+  margin-left: auto;
+  margin-right: auto;
+  color: mv.$color_white;
+}
+.title_skills {
+  @include mv.titles();
+  margin-bottom: 2em;
+}
+.icon-skills {
+  height: 170px;
+  width: 170px;
+  padding: 10px;
+  text-align: center;
+  background-color: mv.$light-bg;
+  margin-bottom: 1.5em;
+  display: grid;
+  place-items: center;
+  box-shadow:  0 0 5px #111;
+  border-radius: 5px;
+}
+.icon-skill {
+  height: 70px;
+  width: 60px;
+  @include mv.tamaños(70px, 60px);
+}
+.sass{
+  @include mv.tamaños(90px, 80px);
+
+}
+.react{
+  @include mv.tamaños(85px, 80px);
+}

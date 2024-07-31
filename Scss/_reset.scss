@@ -1,0 +1,29 @@
+@use "mixins_variables" as mv;
+
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  position: relative;
+  background-color: mv.$black;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: mv.$color_white;
+}
+button {
+  outline: none;
+  border: none;
+}

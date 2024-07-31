@@ -1,0 +1,53 @@
+@use 'mixins_variables' as mv;
+/*****section contacto******/
+
+.section_contacto {
+  margin-bottom: mv.$botton;
+  text-align: center;
+}
+.title_contacto {
+  @include mv.titles();
+}
+.links_contacto {
+  @include mv.flex_box(flex, space-around, center, wrap);
+  @include mv.tamaños(null, 80%);
+  margin: auto;
+  color: mv.$color_white;
+}
+.icon_contacto {
+  height: 50px;
+  width: 50px;
+}
+
+/*****footer****/
+.footer {
+  text-align: center;
+  font-family: sans-serif;
+  color: mv.$color_white;
+  padding: 10px;
+}
+.enlace {
+  color: inherit;
+}
+.proloader {
+  @include mv.tamaños(100vh, 100%);
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.7);
+  top: 0;
+  @include mv.flex_box(flex, center, center, null);
+}
+.proloader .carga {
+  @include mv.tamaños(200px, 200px);
+  border-top: 1em solid mv.$crimson;
+  border-left: 1em solid mv.$crimson;
+  border-right: 1em solid mv.$crimson;
+  border-bottom: 1em solid transparent;
+  border-radius: 50%;
+  animation: rotar_prolader 1s infinite linear;
+}
+
+@keyframes rotar_prolader {
+  100% {
+    transform: rotate(360deg);
+  }
+}

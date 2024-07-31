@@ -1,0 +1,668 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap");
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  position: relative;
+  background-color: #0d0d0d;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+button {
+  outline: none;
+  border: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  box-shadow: -1px 3px 5px -2px rgba(0, 0, 0, 0.7);
+  color: #fff;
+  margin-bottom: 70px;
+  position: sticky;
+  width: 100%;
+  background-color: #1a1a1a;
+  z-index: 500;
+  padding: 0 3em;
+  top: 0;
+}
+
+.img_logo {
+  height: 70px;
+  width: 70px;
+}
+
+nav {
+  height: 50px;
+  width: 700px;
+  overflow: hidden;
+  transition: 0.6s;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding-left: 0;
+}
+
+.btn_menu {
+  font-size: 2em;
+  display: none;
+  cursor: pointer;
+}
+
+.height {
+  height: 350px;
+}
+
+i {
+  margin-right: 0.5em;
+}
+
+.fas {
+  color: crimson;
+}
+
+.crimson {
+  color: crimson;
+}
+
+/*******seccion sobre mi :S ********/
+.section_SobreMi {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 70%;
+  font-family: sans-serif;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.foto_SobreMi {
+  height: 220px;
+  width: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.text_sobre_mi {
+  width: 70%;
+  color: #fff;
+  line-height: 1.5;
+}
+
+.Title_SobreMi {
+  color: #fff;
+  text-align: center;
+  font-size: 2.5em;
+  width: 100%;
+  font-weight: normal;
+  font-weight: normal;
+}
+
+.padding {
+  padding: 10px;
+}
+
+.mas_sobre_mi {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.title_mas_SobreMi {
+  color: #fff;
+  text-align: center;
+  font-size: 2.5em;
+  width: 100%;
+  font-weight: normal;
+  text-align: start;
+  margin-bottom: -1em;
+  font-size: 1.7em;
+}
+
+.info_mas_sobreMi {
+  width: 400px;
+  color: #fff;
+  line-height: 1.5;
+}
+
+/*******seccion de presentacion******/
+.section_presentation {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: auto;
+  color: #fff;
+  margin-bottom: 100px;
+}
+
+h1 {
+  font-size: 3em;
+  margin-bottom: -40px;
+}
+
+h2 {
+  font-size: 5em;
+  margin-bottom: -5px;
+}
+
+h3 {
+  font-size: 2em;
+  margin-bottom: 30px;
+  color: crimson;
+  font-weight: normal;
+}
+
+.btn_sobremi {
+  background-color: crimson;
+  padding: 0.8em 1em;
+  border-radius: 1.5em;
+  margin-right: 1.5em;
+}
+
+.btn_download {
+  background-color: crimson;
+  padding: 0.8em 1em;
+  border-radius: 1.5em;
+}
+
+.img_presentation {
+  height: 500px;
+  width: 550px;
+  object-fit: cover;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+}
+
+.contenedores {
+  margin-top: 100px;
+}
+
+/********seccion de skills******/
+.section_skills {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-bottom: 100px;
+  padding-top: 5em;
+}
+
+.conte_skills {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  color: #fff;
+}
+
+.title_skills {
+  color: #fff;
+  text-align: center;
+  font-size: 2.5em;
+  width: 100%;
+  font-weight: normal;
+  margin-bottom: 2em;
+}
+
+.icon-skills {
+  height: 170px;
+  width: 170px;
+  padding: 10px;
+  text-align: center;
+  background-color: #1a1a1a;
+  margin-bottom: 1.5em;
+  display: grid;
+  place-items: center;
+  box-shadow: 0 0 5px #111;
+  border-radius: 5px;
+}
+
+.icon-skill {
+  height: 70px;
+  width: 60px;
+  height: 70px;
+  width: 60px;
+}
+
+.sass {
+  height: 90px;
+  width: 80px;
+}
+
+.react {
+  height: 85px;
+  width: 80px;
+}
+
+/******proyectos******/
+.section_proyectos {
+  font-family: sans-serif;
+  margin-bottom: 100px;
+  padding: 5em 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  place-items: center;
+  gap: 2em;
+}
+
+.title_proyectos {
+  color: #fff;
+  text-align: center;
+  font-size: 2.5em;
+  width: 100%;
+  font-weight: normal;
+  display: block;
+}
+
+.proyectos {
+  height: 300px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 5px #333;
+}
+
+.cart_buy {
+  background-color: #282c34;
+}
+
+.descripcion {
+  position: absolute;
+  color: #fff;
+  height: 100%;
+  width: 100%;
+  top: -100%;
+  background-color: #1a1a1a;
+  transition: 0.5s;
+}
+
+.proyectos:hover .descripcion {
+  top: 0;
+}
+
+.img_proyectos {
+  height: 100%;
+  width: 100%;
+}
+
+.web_halloween {
+  height: 300px;
+  width: 100%;
+  margin: auto;
+  object-fit: cover;
+}
+
+.shoppin_card {
+  width: 90%;
+  height: 90%;
+  background-size: cover;
+}
+
+/*linear-gradient(
+  90deg,
+  rgba(2, 0, 36, 1) 0%,
+  rgba(9, 9, 121, 1) 0%,
+  rgba(0, 82, 255, 1) 100%,
+  rgba(3, 153, 216, 1) 100%
+)*/
+.app_task {
+  background-color: #17141F;
+}
+
+.img_task {
+  width: 100%;
+  height: 250px;
+  margin-top: 1.5em;
+}
+
+.link_proyectos {
+  width: 100%;
+}
+
+.link_proyectos p {
+  margin-bottom: 1.5em;
+}
+
+.btn_demo {
+  background-color: crimson;
+  padding: 0.6em 1.7em;
+  border-radius: 1.5em;
+  margin-top: 1em;
+  margin-right: 1em;
+}
+
+.btn_github {
+  background-color: crimson;
+  padding: 0.6em 1.5em;
+  border-radius: 1.7em;
+  margin-top: 1em;
+}
+
+.fab {
+  margin-right: 7px;
+}
+
+.d-block {
+  display: block;
+}
+
+.descritpion_proyectos {
+  font-size: 1.5em;
+  font-weight: normal;
+  margin-bottom: 0;
+}
+
+.title_experimentos {
+  color: #fff;
+  text-align: center;
+  font-size: 2.5em;
+  width: 100%;
+  font-weight: normal;
+}
+
+.experimentos {
+  position: relative;
+}
+
+.parent_box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.box__experimentos {
+  width: 220px;
+  height: 250px;
+  height: 250px;
+  width: 220px;
+  background-color: #1a1a1a;
+  border-radius: 0.1em;
+  overflow: hidden;
+  color: #fff;
+  border-radius: 20px;
+  display: center;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+  margin-bottom: 1.5em;
+}
+
+.box__experimentos img {
+  object-fit: cover;
+  height: 100%;
+  width: 220px;
+  width: 220px;
+  height: 100%;
+  position: absolute;
+}
+
+.box__experimentos p {
+  padding: 0.7em;
+}
+
+.title_card {
+  font-size: 1.1em;
+  margin: 0 0;
+}
+
+.btn_enlaces {
+  background-color: crimson;
+  padding: 0.5em 1em;
+  border-radius: 1.5em;
+}
+
+.color {
+  color: rgb(243, 243, 243);
+}
+
+.link_experimentos {
+  height: 100px;
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.button_links {
+  background: crimson;
+  padding: 0.5em 1em;
+  border-radius: 10px;
+  color: #fff;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8em;
+  color: white;
+}
+
+.button_links svg {
+  height: 1rem;
+  width: 1rem;
+  margin-right: 0.5em;
+}
+
+.box__experimentos:hover .link_experimentos {
+  top: 50%;
+}
+
+.elementores {
+  position: absolute;
+  color: #fff;
+}
+
+/*****section contacto******/
+.section_contacto {
+  margin-bottom: 70px;
+  text-align: center;
+}
+
+.title_contacto {
+  color: #fff;
+  text-align: center;
+  font-size: 2.5em;
+  width: 100%;
+  font-weight: normal;
+}
+
+.links_contacto {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: auto;
+  color: #fff;
+}
+
+.icon_contacto {
+  height: 50px;
+  width: 50px;
+}
+
+/*****footer****/
+.footer {
+  text-align: center;
+  font-family: sans-serif;
+  color: #fff;
+  padding: 10px;
+}
+
+.enlace {
+  color: inherit;
+}
+
+.proloader {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.7);
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.proloader .carga {
+  height: 200px;
+  width: 200px;
+  border-top: 1em solid crimson;
+  border-left: 1em solid crimson;
+  border-right: 1em solid crimson;
+  border-bottom: 1em solid transparent;
+  border-radius: 50%;
+  animation: rotar_prolader 1s infinite linear;
+}
+
+@keyframes rotar_prolader {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@media (max-width: 1024px) {
+  .section_presentation {
+    flex-direction: column-reverse;
+  }
+  ul {
+    flex-direction: row;
+  }
+  .section_SobreMi {
+    display: grid;
+    place-items: center;
+  }
+}
+@media (max-width: 820px) {
+  .btn_menu {
+    display: block;
+  }
+  nav {
+    width: 100%;
+    height: 0;
+  }
+  ul {
+    justify-content: space-around;
+    flex-direction: column;
+    height: 350px;
+  }
+  .section_presentation {
+    text-align: center;
+  }
+  .section_SobreMi {
+    width: 100%;
+    padding: 7px;
+    text-align: center;
+  }
+}
+@media (max-width: 650px) {
+  .titles_presentation {
+    width: 100%;
+  }
+  .img_presentation {
+    width: 100%;
+  }
+  .img_presentation img {
+    object-fit: cover;
+  }
+  .foto_SobreMi {
+    margin: 0 auto;
+  }
+  .text_sobre_mi p {
+    width: 100%;
+  }
+}
+@media (max-width: 812px) {
+  .btn_menu {
+    display: block;
+  }
+  nav {
+    width: 100%;
+    height: 0;
+  }
+  ul {
+    justify-content: space-around;
+    flex-direction: column;
+    height: 350px;
+  }
+  .section_presentation {
+    text-align: center;
+  }
+  .section_SobreMi {
+    width: 100%;
+    padding: 7px;
+  }
+}
+@media (max-width: 400px) {
+  .conte_skills {
+    justify-content: center;
+  }
+}
+/* @media (max-width: 650px) {
+  .titles_presentation {
+    width: 100%;
+  }
+  .img_presentation {
+    width: 100%;
+  }
+  .img_presentation img {
+    object-fit: cover;
+  }
+  .container_diamond{
+    margin: auto;
+  }
+  .section_SobreMi{
+    display: grid;
+    place-items: center;
+  }
+} */
+
+/*# sourceMappingURL=styles.css.map */

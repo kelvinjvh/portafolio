@@ -1,0 +1,53 @@
+@use 'mixins_variables'as mv;
+
+/*******seccion de presentacion******/
+.section_presentation {
+  @include mv.flex_box(flex, space-around, center, wrap);
+  @include mv.tamaños(null, 100%);
+  margin: auto;
+  color: mv.$color_white;
+  margin-bottom: mv.$botton2;
+}
+
+h1 {
+  font-size: 3em;
+  margin-bottom: -40px;
+}
+
+h2 {
+  font-size: 5em;
+  margin-bottom: mv.$margin_bottom;
+}
+
+h3 {
+  font-size: 2em;
+  margin-bottom: 30px;
+  color: mv.$crimson;
+  font-weight: normal;
+}
+
+.btn_sobremi {
+  background-color: mv.$crimson;
+  padding: .8em 1em;
+  border-radius: 1.5em;
+  margin-right: 1.5em;
+}
+
+.btn_download {
+  background-color: mv.$crimson;
+  padding: .8em 1em;
+  border-radius: 1.5em;
+
+}
+
+.img_presentation {
+  @include mv.tamaños(500px, 550px);
+  object-fit: cover;
+}
+
+img {
+  @include mv.tamaños(100%, 100%);
+}
+.contenedores{
+  margin-top: 100px;
+}
