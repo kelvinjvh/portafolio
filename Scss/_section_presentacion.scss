@@ -3,7 +3,7 @@
 /*******seccion de presentacion******/
 .section_presentation {
   @include mv.flex_box(flex, space-around, center, wrap);
-  @include mv.tamaños(null, 100%);
+  @include mv.tamaños(null, 95%);
   margin: auto;
   color: mv.$color_white;
   margin-bottom: mv.$botton2;
@@ -11,16 +11,16 @@
 }
 
 h1 {
-  font-size: 3em;
+  font-size: 6em;
   margin-bottom: -40px;
 }
 
-h2 {
+/* h2 {
   font-size: 5em;
   margin-bottom: mv.$margin_bottom;
-}
+} */
 
-h3 {
+h2 {
   font-size: 2em;
   margin-bottom: 30px;
   /* color: mv.$crimson; */
@@ -29,20 +29,23 @@ h3 {
 }
 
 .btn_sobremi {
-  /* background-color: mv.$crimson; */
-  outline:2px solid mv.$color_purple_claro;
   padding: .8em 1em;
-  border-radius: 1.5em;
+  border-radius: .2em;
   margin-right: 1.5em;
 }
 
 .btn_download {
   /* background-color: mv.$crimson; */
   padding: 1em 1em;
-  border-radius: 1.5em;
-  outline:2px solid mv.$color_purple_claro;
+  border-radius: .2em;
 }
-
+.btn_presentacion{
+  transition: .3s;
+  outline:1px solid mv.$color_purple_claro;
+}
+.btn_presentacion:hover{
+  background-color: mv.$color_purple;
+}
 .img_presentation {
   @include mv.tamaños(500px, 550px);
   object-fit: cover;

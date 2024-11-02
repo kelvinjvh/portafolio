@@ -161,7 +161,7 @@ i {
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  width: 100%;
+  width: 95%;
   margin: auto;
   color: #F1F1F1;
   margin-bottom: 100px;
@@ -169,16 +169,15 @@ i {
 }
 
 h1 {
-  font-size: 3em;
+  font-size: 6em;
   margin-bottom: -40px;
 }
 
-h2 {
+/* h2 {
   font-size: 5em;
-  margin-bottom: -5px;
-}
-
-h3 {
+  margin-bottom: mv.$margin_bottom;
+} */
+h2 {
   font-size: 2em;
   margin-bottom: 30px;
   /* color: mv.$crimson; */
@@ -187,18 +186,24 @@ h3 {
 }
 
 .btn_sobremi {
-  /* background-color: mv.$crimson; */
-  outline: 2px solid #A580FC;
   padding: 0.8em 1em;
-  border-radius: 1.5em;
+  border-radius: 0.2em;
   margin-right: 1.5em;
 }
 
 .btn_download {
   /* background-color: mv.$crimson; */
   padding: 1em 1em;
-  border-radius: 1.5em;
-  outline: 2px solid #A580FC;
+  border-radius: 0.2em;
+}
+
+.btn_presentacion {
+  transition: 0.3s;
+  outline: 1px solid #A580FC;
+}
+
+.btn_presentacion:hover {
+  background-color: #2f2052;
 }
 
 .img_presentation {
@@ -540,6 +545,9 @@ img {
   }
 }
 @media (max-width: 820px) {
+  h1 {
+    font-size: 4em;
+  }
   .btn_menu {
     display: block;
   }
@@ -560,8 +568,6 @@ img {
     padding: 7px;
     text-align: center;
   }
-}
-@media (max-width: 820px) {
   .proyectos {
     height: auto;
     width: 90%;
