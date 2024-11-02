@@ -1,11 +1,14 @@
-$black:#0d0d0d;
+$color_body:linear-gradient(to right, #151515, #131314, #111113, #0e0f12, #0a0c11, #0b0f19, #0b1220, #081528, #091b3a, #121f4c, #23225d, #39226b);
 $light-bg:#1a1a1a;
-$crimson:crimson;
-$color_white: #fff;
+$crimson:#A580FC;
+$color_white: #F1F1F1;
 $margin_bottom: -5px;
 $botton: 70px;
 $botton2: 100px;
 $font-size:2.5em;
+$color_purple:#2f2052;
+$color_purple_claro :#A580FC;
+$color_black:#161616;
 
 @mixin tamaños($height, $width) {
   height: $height;

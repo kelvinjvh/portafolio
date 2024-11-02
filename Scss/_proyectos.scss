@@ -1,103 +1,94 @@
-@use 'mixins_variables' as mv;
+@use "mixins_variables" as mv;
 
 /******proyectos******/
 .section_proyectos {
-    //@include mv.flex_box(flex, space-around, center, wrap);
-    
-    font-family: sans-serif;
-    margin-bottom: mv.$botton2;
-    padding: 5em 20px;
-  }
-  .grid{
-    display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(20rem,1fr));
-    place-items: center;
-    gap: 2em;
-  }
-  .title_proyectos {
-    @include mv.titles();
-    display: block
-  }
-  .proyectos {
-    @include mv.tamaños(300px, 100%);
-    text-align: center;
-    margin-bottom: 20px;
-    position: relative;
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0 0 5px #333;
-  }
-  .cart_buy{
-    background-color: #282c34;
-  }
-  .descripcion{
-    position: absolute;
-    color: mv.$color_white;
-    height: 100%;
-    width: 100%;
-    top: -100%;
-    background-color: mv.$light-bg;
-    transition: .5s
-  }
-  .proyectos:hover .descripcion{
-    top: 0
-  }
-  .img_proyectos {
-    @include mv.tamaños(100%, 100%);
-  }
-  .web_halloween{
-    height: 300px;  
-    width:100%;
-    margin: auto;
-    object-fit: cover;
-  }
-  .shoppin_card{
-    width: 90%;
-    height: 90%;
-   background-size: cover;
-  }
-  /*linear-gradient(
-    90deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(9, 9, 121, 1) 0%,
-    rgba(0, 82, 255, 1) 100%,
-    rgba(3, 153, 216, 1) 100%
-  )*/
-  .app_task{
-   background-color: #17141F;
-  }
-  .img_task{
-    width: 100%;
-    height: 250px;
-    margin-top: 1.5em;
-  }
-  .link_proyectos {
-    width: 100%;
-  }
-  .link_proyectos p{
-    margin-bottom: 1.5em;
-  }
-  .btn_demo {
-    background-color: mv.$crimson;
-    padding: .6em 1.7em;
-    border-radius: 1.5em;
-    margin-top: 1em;
-    margin-right: 1em;
-  }
-  .btn_github {
-    background-color: mv.$crimson;
-    padding: .6em 1.5em;
-    border-radius: 1.7em;
-    margin-top: 1em;
-  }
-  .fab{
-    margin-right: 7px;
-  }
-  .d-block {
-    display: block;
-  }
-  .descritpion_proyectos{
-    font-size: 1.5em;
-    font-weight: normal;
-    margin-bottom: 0;
-  }
+  //@include mv.flex_box(flex, space-around, center, wrap);
+  font-family: sans-serif;
+  margin-bottom: mv.$botton2;
+  padding: 5em 20px;
+}
+.grid {
+  display: grid;
+  /*  grid-template-columns: repeat(auto-fill,minmax(20rem,1fr)); */
+  place-items: center;
+  /*     gap: 2em; */
+}
+.title_proyectos {
+  @include mv.titles();
+}
+
+.proyectos {
+  @include mv.tamaños(auto, 70%);
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(16rem,1fr));
+  border-radius: 10px;
+  outline: 2px solid #242629;
+  overflow: hidden;
+  margin-bottom: 2em;
+  padding: .5em;
+}
+
+.descripcion {
+  color: mv.$color_white;
+  /* background-color: mv.$light-bg; */
+  transition: 0.5s;
+  padding: 0 1em;
+  height: auto;
+}
+
+.links_proyectos{
+
+  margin-bottom: 1.5em;
+  display: flex;
+  justify-content: space-between;
+  width: 250px;
+  
+}
+.proyecto__img {
+  height: 250px; /* Altura fija */
+  width: auto; /* Cambia a auto si quieres ajustar el ancho proporcionalmente */
+  background-image: url("../Img/APP MOVIES.png");
+  background-size: cover; /* Mantiene la imagen de fondo cubriendo el contenedor */
+  background-position: top; /* Centra la imagen */
+  border-radius: 5px;
+  outline: 2px solid mv.$color_black;
+  aspect-ratio: 16/9;
+}
+
+.link_proyectos {
+  width: 100%;
+}
+.link_proyectos p {
+  margin-bottom: 2em;
+}
+.btn_demo {
+  background-color: mv.$color_black;
+  padding: 0.6em 1.7em;
+  border-radius: 0.3em;
+}
+.btn{
+  outline: 1px solid #222;
+  transition: .2s;
+}
+.btn:hover{
+  outline: 1px solid mv.$color_purple;
+}
+.btn_github {
+  background-color: mv.$color_black;
+  padding: 0.6em 1.5em;
+  border-radius: 0.3em;
+
+}
+.fab {
+  margin-right: 7px;
+}
+.d-block {
+  display: block;
+}
+.description_proyectos {
+  font-size: 1.5em;
+  font-weight: normal;
+  margin: 0;
+  color: mv.$color_purple_claro;
+}

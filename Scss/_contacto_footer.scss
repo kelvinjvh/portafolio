@@ -13,6 +13,7 @@
   @include mv.tamaños(null, 80%);
   margin: auto;
   color: mv.$color_white;
+  max-width: 1200px;
 }
 .icon_contacto {
   height: 50px;

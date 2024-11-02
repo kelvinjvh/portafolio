@@ -12,7 +12,8 @@ html {
 body {
   margin: 0;
   position: relative;
-  background-color: mv.$black;
+  /* background: mv.$black; */
+  background-image: mv.$color_body;
 }
 
 li {

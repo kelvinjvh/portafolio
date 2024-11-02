@@ -1,83 +1,52 @@
-@use './mixins_variables' as mixins_variables;
+@use "./mixins_variables" as mixins_variables;
 
 .title_experimentos {
-    @include mixins_variables.titles;
+  @include mixins_variables.titles;
 }
 
 .experimentos {
-    position: relative;
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .parent_box {
-    @include mixins_variables.flex_box(flex, space-around, center, wrap);
+  @include mixins_variables.flex_box(flex, space-around, center, wrap);
 }
 
 .box__experimentos {
-    width: 220px;
-    height: 250px;
-    @include mixins_variables.tamaños(250px, 220px);
-    background-color: mixins_variables.$light-bg;
-    border-radius: .1em;
-    overflow: hidden;
-    color: mixins_variables.$color_white;
-    border-radius: 20px;
-    @include mixins_variables.flex_box(center, center, center, wrap);
-    position: relative;
-    margin-bottom: 1.5em;
+  @include mixins_variables.tamaños(auto, 240px);
+  padding: 0.5em;
+  outline: 2px solid mixins_variables.$color_black;
+  color: mixins_variables.$color_white;
+  border-radius: 5px;
+  @include mixins_variables.flex_box(center, center, center, wrap);
+  margin-bottom: 1.5em;
 }
 
 .box__experimentos img {
-    object-fit: cover;
-    @include mixins_variables.tamaños(100%, 220px);
-    width: 220px;
-    height: 100%;
-    position: absolute;
+  object-fit: cover;
+  @include mixins_variables.tamaños(220px, 100%);
+  border-radius: 3px;
+  box-shadow: 0 0 5px #000;
+  margin-bottom: 1em;
 }
-
-.box__experimentos p {
-    padding: .7em;
-}
-
-.title_card {
-    font-size: 1.1em;
-    margin: 0 0;
-}
-
-.btn_enlaces {
-    background-color: mixins_variables.$crimson;
-    padding: .5em 1em;
-    border-radius: 1.5em;
-}
-
-.color {
-    color: rgb(243, 243, 243);
-}
-
 .link_experimentos {
-    @include mixins_variables.tamaños(100px, 100%);
-    position: absolute;
-    top: 100%;
-    @include mixins_variables.flex_box(flex, center, flex-end, wrap);
-    transition: .5s;
-    cursor: pointer;
+  @include mixins_variables.tamaños(auto, 100%);
+  @include mixins_variables.flex_box(flex, center, flex-end, wrap);
+  transition: 0.5s;
+  cursor: pointer;
 }
 .button_links {
-    background: crimson;
-    padding: .5em 1em;
-    border-radius: 10px;
-    color: mixins_variables.$color_white;
-    width: 80%;
-    @include mixins_variables.flex_box(flex, center, center, null);
-    font-size: .8em;
-    color: #ffff;
+  outline: 1px solid mixins_variables.$color_purple;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  color: mixins_variables.$color_white;
+  width: 90%;
+  font-size: 0.8em;
 }
 
 .button_links svg {
-    @include mixins_variables.tamaños(1rem, 1rem);
-    margin-right: .5em;
+  @include mixins_variables.tamaños(1rem, 1rem);
+  margin-right: 0.5em;
 }
-
-.box__experimentos:hover .link_experimentos {
-    top: 50%;
-}
-

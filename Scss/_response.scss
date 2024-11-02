@@ -1,3 +1,5 @@
+@use "mixins_variables" as mv;
+
 @media (max-width: 1024px) {
   .section_presentation {
     flex-direction: column-reverse;
@@ -8,6 +10,9 @@
   .section_SobreMi{
     display: grid;
     place-items: center;
+  }
+  .proyectos{
+    @include mv.tamaños(auto, 90%);
   }
 }
 
@@ -35,6 +40,11 @@
     
   }
 }
+@media (max-width: 820px) {
+  .proyectos{
+    @include mv.tamaños(auto, 90%);
+  }
+}
 
 @media (max-width: 650px) {
   .titles_presentation {
@@ -51,6 +61,9 @@
   }
   .text_sobre_mi p{
     width: 100%;
+  }
+  .proyectos{
+    @include mv.tamaños(auto, 100%);
   }
 }
 

@@ -4,27 +4,27 @@
   @include mv.flex_box(flex, space-between, center, wrap);
   font-family: sans-serif;
   font-weight: bold;
-  margin-bottom: mv.$botton2;
+   margin-bottom: mv.$botton2; 
   padding-top: 5em;
 }
 .conte_skills {
   @include mv.flex_box(flex, space-between, center, wrap);
-  @include mv.tamaños(null, 90%);
-  margin-left: auto;
-  margin-right: auto;
+  @include mv.tamaños(auto, 90%);
+  max-width: 1200px;
+  margin: 0 auto;
   color: mv.$color_white;
+  gap: 1.5em;
 }
 .title_skills {
   @include mv.titles();
   margin-bottom: 2em;
 }
 .icon-skills {
-  height: 170px;
-  width: 170px;
-  padding: 10px;
+  height: 130px;
+  width: 130px;
+  padding: 5px;
   text-align: center;
-  background-color: mv.$light-bg;
-  margin-bottom: 1.5em;
+  outline:2px solid mv.$color_black;
   display: grid;
   place-items: center;
   box-shadow:  0 0 5px #111;
