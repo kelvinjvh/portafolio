@@ -39,9 +39,9 @@
 }
 .proloader .carga {
   @include mv.tamaños(200px, 200px);
-  border-top: 1em solid mv.$crimson;
-  border-left: 1em solid mv.$crimson;
-  border-right: 1em solid mv.$crimson;
+  border-top: 1em solid mv.$color_purple;
+  border-left: 1em solid mv.$color_purple;
+  border-right: 1em solid mv.$color_purple;
   border-bottom: 1em solid transparent;
   border-radius: 50%;
   animation: rotar_prolader 1s infinite linear;

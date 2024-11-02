@@ -20,6 +20,9 @@
   h1{
     font-size: 4em
   }
+  h2,h3,h4,h5,h6{
+    font-size: 1.7em;
+  }
   .btn_menu {
     display: block;
   }
@@ -94,21 +97,4 @@
     justify-content: center;
   }
 }
-/* @media (max-width: 650px) {
-  .titles_presentation {
-    width: 100%;
-  }
-  .img_presentation {
-    width: 100%;
-  }
-  .img_presentation img {
-    object-fit: cover;
-  }
-  .container_diamond{
-    margin: auto;
-  }
-  .section_SobreMi{
-    display: grid;
-    place-items: center;
-  }
-} */
+
