@@ -259,11 +259,11 @@ img {
   width: 130px;
   padding: 5px;
   text-align: center;
-  outline: 2px solid #161616;
+  outline: 1px solid rgba(170, 170, 170, 0.6666666667);
   display: grid;
   place-items: center;
   box-shadow: 0 0 5px #111;
-  border-radius: 5px;
+  border-radius: 3px;
 }
 
 .icon-skill {
@@ -310,7 +310,7 @@ img {
   width: 70%;
   max-width: 1200px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
   border-radius: 10px;
   outline: 2px solid #242629;
   overflow: hidden;
@@ -333,15 +333,14 @@ img {
   width: 250px;
 }
 
-.proyecto__img {
+.project__img {
   height: 250px; /* Altura fija */
-  width: auto; /* Cambia a auto si quieres ajustar el ancho proporcionalmente */
-  background-image: url("../Img/APP MOVIES.png");
-  background-size: cover; /* Mantiene la imagen de fondo cubriendo el contenedor */
-  background-position: top; /* Centra la imagen */
+  width: 100%; /* Cambia a auto si quieres ajustar el ancho proporcionalmente */
+  object-fit: cover; /* Mantiene la imagen de fondo cubriendo el contenedor */
   border-radius: 5px;
   outline: 2px solid #161616;
   aspect-ratio: 16/9;
+  object-position: top left;
 }
 
 .link_proyectos {
@@ -413,7 +412,7 @@ img {
   height: auto;
   width: 240px;
   padding: 0.5em;
-  outline: 2px solid #161616;
+  outline: 1px solid rgba(170, 170, 170, 0.6666666667);
   color: #F1F1F1;
   border-radius: 5px;
   display: center;
@@ -429,7 +428,6 @@ img {
   width: 100%;
   border-radius: 3px;
   box-shadow: 0 0 5px #000;
-  margin-bottom: 1em;
 }
 
 .link_experimentos {
@@ -448,7 +446,7 @@ img {
   padding: 0.5em 1em;
   border-radius: 5px;
   color: #F1F1F1;
-  width: 90%;
+  width: 100%;
   font-size: 0.8em;
 }
 
@@ -573,6 +571,7 @@ img {
   .proyectos {
     height: auto;
     width: 90%;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   }
 }
 @media (max-width: 650px) {

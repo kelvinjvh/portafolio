@@ -17,7 +17,7 @@
 .box__experimentos {
   @include mixins_variables.tamaños(auto, 240px);
   padding: 0.5em;
-  outline: 2px solid mixins_variables.$color_black;
+  outline: 1px solid #aaaa;
   color: mixins_variables.$color_white;
   border-radius: 5px;
   @include mixins_variables.flex_box(center, center, center, wrap);
@@ -29,20 +29,24 @@
   @include mixins_variables.tamaños(220px, 100%);
   border-radius: 3px;
   box-shadow: 0 0 5px #000;
-  margin-bottom: 1em;
 }
+.subtitle_experiments{
+
+}
+
 .link_experimentos {
   @include mixins_variables.tamaños(auto, 100%);
   @include mixins_variables.flex_box(flex, center, flex-end, wrap);
   transition: 0.5s;
   cursor: pointer;
 }
+
 .button_links {
   outline: 1px solid mixins_variables.$color_purple;
   padding: 0.5em 1em;
   border-radius: 5px;
   color: mixins_variables.$color_white;
-  width: 90%;
+  width: 100%;
   font-size: 0.8em;
 }
 

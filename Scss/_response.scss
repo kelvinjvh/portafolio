@@ -46,6 +46,7 @@
   }
   .proyectos{
     @include mv.tamaños(auto, 90%);
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   }
 }
 
