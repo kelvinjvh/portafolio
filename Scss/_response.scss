@@ -7,20 +7,24 @@
   ul {
     flex-direction: row;
   }
-  .section_SobreMi{
+  .section_SobreMi {
     display: grid;
     place-items: center;
   }
-  .proyectos{
+  .proyectos {
     @include mv.tamaños(auto, 90%);
   }
 }
 
 @media (max-width: 820px) {
-  h1{
-    font-size: 4em
+  h1 {
+    font-size: 4em;
   }
-  h2,h3,h4,h5,h6{
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     font-size: 1.7em;
   }
   .btn_menu {
@@ -42,9 +46,8 @@
     width: 100%;
     padding: 7px;
     text-align: center;
-    
   }
-  .proyectos{
+  .proyectos {
     @include mv.tamaños(auto, 90%);
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   }
@@ -60,13 +63,13 @@
   .img_presentation img {
     object-fit: cover;
   }
-  .foto_SobreMi{
-    margin:0 auto;
+  .foto_SobreMi {
+    margin: 0 auto;
   }
-  .text_sobre_mi p{
+  .text_sobre_mi p {
     width: 100%;
   }
-  .proyectos{
+  .proyectos {
     @include mv.tamaños(auto, 100%);
   }
 }
@@ -93,9 +96,8 @@
   }
 }
 
-@media (max-width:400px){
+@media (max-width: 400px) {
   .conte_skills {
     justify-content: center;
   }
 }
-
