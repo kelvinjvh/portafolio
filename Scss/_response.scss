@@ -87,6 +87,10 @@
     flex-direction: column;
     height: 350px;
   }
+  li{
+    text-align: left;
+    width: 150px;
+  }
   .section_presentation {
     text-align: center;
   }
@@ -99,5 +103,8 @@
 @media (max-width: 400px) {
   .conte_skills {
     justify-content: center;
+  }
+  .project__img{
+    width: 100%;
   }
 }

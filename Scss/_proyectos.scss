@@ -44,13 +44,11 @@
   width: 250px;
 }
 .project__img {
-  height: 250px; /* Altura fija */
-  width: 90%; /* Cambia a auto si quieres ajustar el ancho proporcionalmente */
- /* Mantiene la imagen de fondo cubriendo el contenedor */
+  height: 250px;
+  width: 90%;
   border-radius: 5px;
-  /* outline: 2px solid mv.$color_black; */
   background-size: cover;
-  /* object-position: top left; */
+
 }
 
 .link_proyectos {

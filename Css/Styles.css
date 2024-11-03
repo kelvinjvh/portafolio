@@ -334,13 +334,10 @@ img {
 }
 
 .project__img {
-  height: 250px; /* Altura fija */
-  width: 90%; /* Cambia a auto si quieres ajustar el ancho proporcionalmente */
-  /* Mantiene la imagen de fondo cubriendo el contenedor */
+  height: 250px;
+  width: 90%;
   border-radius: 5px;
-  /* outline: 2px solid mv.$color_black; */
   background-size: cover;
-  /* object-position: top left; */
 }
 
 .link_proyectos {
@@ -612,6 +609,10 @@ img {
     flex-direction: column;
     height: 350px;
   }
+  li {
+    text-align: left;
+    width: 150px;
+  }
   .section_presentation {
     text-align: center;
   }
@@ -623,6 +624,9 @@ img {
 @media (max-width: 400px) {
   .conte_skills {
     justify-content: center;
+  }
+  .project__img {
+    width: 100%;
   }
 }
 
