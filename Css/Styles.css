@@ -595,6 +595,9 @@ img {
     height: auto;
     width: 100%;
   }
+  .project__img {
+    width: 100%;
+  }
 }
 @media (max-width: 812px) {
   .btn_menu {
